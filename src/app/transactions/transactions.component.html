@@ -1,0 +1,29 @@
+<h2>My Transactions</h2>
+
+<div>
+ <label>Transaction name:
+   <input #transactionName />
+ </label>
+ <!-- (click) passes input value to add() and then clears the input -->
+ <button (click)="add(transactionName.value); transactionName.value=''">
+   add
+ </button>
+</div>
+
+<ul class="transactions">
+ <li *ngFor="let transaction of transactions">
+   <a routerLink="/transactionDetail/{{transaction.id}}">
+     <span class="badge">{{transaction.id}}</span> {{transaction.name}}
+   </a>
+   <button class="delete" title="delete transaction"
+   (click)="delete(transaction)">x</button>
+ </li>
+</ul>
+
+
+<!--
+Copyright 2017-2018 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
+
