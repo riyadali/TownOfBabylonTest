@@ -30,6 +30,15 @@ h4 {
 .col-1-2 {
   width: 50%;
 }
+.maincolumn {
+  padding: 20px;
+  text-align: left;
+  color: #eee;
+  max-height: 500px;
+  min-width: 120px;
+  background-color: #607D8B;
+  border-radius: 2px;
+}
 .module {
   padding: 20px;
   text-align: center;
