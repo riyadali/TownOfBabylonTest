@@ -9,6 +9,7 @@
 }
 a {
   text-decoration: none;
+  color: lightpink;
 }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
