@@ -1,11 +1,26 @@
-<h3>Top Heroes</h3>
+<h3>Welcome to Town of Babylon</h3>
+<p>Welcome to the Town of Babylon!  I am so glad that you are visiting us online.  Whether this is your first visit or a return "home," I am sure that you will find our site thorough and easy to use. Whether you are looking for general information or an application for a permit - it's all here.<br/><br/>
+<img src="http://ny-babylon.civicplus.com/images/pages/N1/RichSchafferHeadshotsmall.jpg"  alt="RichSchafferHeadshotsmall.jpg" width="42" height="42">
+RICH SCHAFFER, Supervisor, Town of Babylon
+
 <div class="grid grid-pad">
-  <a *ngFor="let hero of heroes" class="col-1-4"
-      routerLink="/detail/{{hero.id}}">
-    <div class="module hero">
-      <h4>{{hero.name}}</h4>
+  <a  class="col-1-2">
+    <div class="maincolumn hero">
+      <h4>In the News</h4>
+      <article><a href="http://www.townofbabylon.com/CivicAlerts.aspx?AID=713">Town of Babylon Holds Tree Forum</a> 
+The Town of Babylon Department of Environmental Control (D.E.C.) recently held a forum ... </article>
+     <br/>
+     <article><a href="http://www.townofbabylon.com/CivicAlerts.aspx?AID=712">Town of Babylon Recognizes Elementary School on 50th Anniversary</a> 
+Town of Babylon Supervisor Rich Schaffer visited William E. DeLuca Jr. Elementary School last week to recognize its 50th anniversary ... </article>
     </div>
   </a>
+  <a  class="col-1-2" routerLink="/detail/2">
+    <div class="maincolumn hero">
+      <h4>Calendar</h4>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
+  </a> 
+  
 </div>
 
 <app-hero-search></app-hero-search>
