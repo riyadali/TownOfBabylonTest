@@ -20,6 +20,7 @@ import { MessagesComponent }    from './messages/messages.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { TransactionDetailComponent } from './transaction-detail/transaction-detail.component';
 import { TransactionService } from './transaction.service';
+import { MainMenuComponent } from './main-menu/main-menu.component';
 
 @NgModule({
   imports: [
@@ -48,7 +49,8 @@ import { TransactionService } from './transaction.service';
     MessagesComponent,
     HeroSearchComponent,
     TransactionsComponent,
-    TransactionDetailComponent
+    TransactionDetailComponent,
+    MainMenuComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [TransactionService]
