@@ -2,7 +2,7 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
-import { MatMenuModule, MatButtonModule, MatIconModule, MatCardModule } from '@angular/material';
+import { MatMenuModule, MatButtonModule, MatIconModule, MatCardModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
@@ -21,6 +21,8 @@ import { TransactionsComponent } from './transactions/transactions.component';
 import { TransactionDetailComponent } from './transaction-detail/transaction-detail.component';
 import { TransactionService } from './transaction.service';
 import { MainMenuComponent } from './main-menu/main-menu.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { ToolBarComponent } from './tool-bar/tool-bar.component';
 
 @NgModule({
   imports: [
@@ -30,6 +32,8 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
     MatButtonModule, 
     MatIconModule, 
     MatCardModule,
+    MatSidenavModule, 
+    MatToolbarModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
