@@ -54,7 +54,9 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
     HeroSearchComponent,
     TransactionsComponent,
     TransactionDetailComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    SideNavComponent,
+    ToolBarComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [TransactionService]
