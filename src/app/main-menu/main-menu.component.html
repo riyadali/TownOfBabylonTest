@@ -3,9 +3,11 @@
     Angular Material Menu Demo
   </mat-card-title>
   <mat-card-content>
-    <button mat-raised-button color="primary" [matMenuTriggerFor]="menu">
+   <mat-toolbar color="primary">
+    <button mat-raised-button color="secondary" [matMenuTriggerFor]="menu">
       Open Menu
     </button>
+    </mat-toolbar>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>
         <mat-icon>settings</mat-icon>
