@@ -1,2 +1,3 @@
 /* For Angular Materials - Menus Sidenavs, Toolbars */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* -- moved to styles.css so applicable for whole app */
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
