@@ -1,0 +1,38 @@
+<mat-card class="demo-panel">
+    <mat-card-title>
+      Angular Material Toolbar Demo
+    </mat-card-title>
+    <mat-card-content>
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <span>First Row</span>
+        </mat-toolbar-row>
+        
+          <mat-toolbar-row>
+            <span>Second Row</span>
+            <span class="toolbar-spacer"></span>
+            <mat-icon class="toolbar-icon">favorite</mat-icon>
+          </mat-toolbar-row>
+        
+        </mat-toolbar>
+    </mat-card-content>
+</mat-card>
+
+<mat-card class="demo-panel">
+  <mat-card-title>
+      Angular Material Toolbar Second Demo
+  </mat-card-title>
+
+  <mat-card-content>
+    <mat-toolbar color="primary">
+      <span>App Name</span>
+      <span class="example-spacer"></span>
+      <button md-button [matMenuTriggerFor]="appMenu"><mat-icon>menu</mat-icon></button>
+    </mat-toolbar>
+
+    <mat-menu #appMenu="matMenu">
+      <button mat-menu-item> Settings </button>
+      <button mat-menu-item> Contact </button>
+    </mat-menu>
+  </mat-card-content>
+</mat-card>
