@@ -40,14 +40,26 @@
               }
             ],
           "styles": [
+             {
+                "input": "node_modules/font-awesome/scss/font-awesome.scss"
+              },   
               {
                 "input": "node_modules/bootstrap/scss/bootstrap.scss"
-              },            
+              }, 
+              {
+                "input": "node_modules/angular-bootstrap-md/scss/mdb-free.scss"
+              },    
               {
                 "input": "src/styles.scss"
               }
             ],          
             "scripts": [
+               {
+                "input": "node_modules/chart.js/dist/Chart.js"
+              },
+              {
+                "input": "node_modules/hammerjs/hammer.min.js"
+              }    
            
             ]
           },
