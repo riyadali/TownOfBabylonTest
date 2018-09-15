@@ -1,4 +1,5 @@
-import { NgModule }       from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA }       from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
@@ -39,6 +40,7 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
     AppRoutingModule,
     HttpClientModule,
     BsDropdownModule.forRoot(),
+    MDBBootstrapModule.forRoot(),
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
@@ -47,6 +49,7 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   declarations: [
     AppComponent,
     DashboardComponent,
