@@ -25,6 +25,7 @@ import { TransactionService } from './transaction.service';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
+import { ToolBarScalableComponent } from './tool-bar-scalable/tool-bar-scalable.component';
 
 @NgModule({
   imports: [
@@ -61,6 +62,7 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
     TransactionDetailComponent,
     MainMenuComponent,
     SideNavComponent,
+    ToolBarScalableComponent,
     ToolBarComponent
   ],
   bootstrap: [ AppComponent ],
