@@ -45,6 +45,9 @@
                 "input": "src/styles.scss"
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src"]
+            },
             "scripts": [
            
             ]
