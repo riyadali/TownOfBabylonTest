@@ -40,7 +40,9 @@
               }
             ],
           "styles": [
-            
+              {
+                "input": "~bootstrap/scss/bootstrap.scss"
+              },            
               {
                 "input": "src/styles.scss"
               }
