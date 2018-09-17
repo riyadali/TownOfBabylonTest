@@ -13,6 +13,7 @@ export class AppComponent {
   /* from site https://valor-software.com/ngx-bootstrap/#/getting-started */
   constructor() {
     setTheme('bs4'); // or 'bs3'
+  }
 }
 
 
