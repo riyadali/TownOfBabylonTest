@@ -12,7 +12,6 @@
  could see whole tool bar during devlopment
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
  -->
-  
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark elegant-color">
 
     <!-- Navbar brand -->
@@ -33,24 +32,47 @@
                 <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
             </li>
 
-         <!-- trying a most basic dropdown from ngx-bootstrap -->
-<div class="btn-group" dropdown>
-  <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
-          aria-controls="dropdown-basic">
-    Button dropdown <span class="caret"></span>
-  </button>
-  <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
-      role="menu" aria-labelledby="button-basic">
-    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
-    <li class="divider dropdown-divider"></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
-    </li>
-  </ul>
-</div>
-                 
-            
+
+             <!-- Dropdown Menu Group-->
+           <li class="btn-group nav-item" dropdown [autoClose]="true" container="body">
+              <a  dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle btn-dark" 
+                      aria-controls="dropdown-nested">
+                This dropdown has nested submenu <span class="caret"></span>
+              </a>
+             
+              <ul id="dropdown-nested" *dropdownMenu class="dropdown-menu"
+                  role="menu" aria-labelledby="button-nested">
+                <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Action</a></li>
+             
+                <!-- Nested dropdown -->
+                <li role="menuitem" dropdown triggers="mouseover" placement="right" container="body">
+                    <a dropdownToggle mdbWavesEffect class="dropdown-item dropdown-toggle"
+                        (click)="false">Hover me for nested dropdown <span class="caret"></span></a>
+                    <ul *dropdownMenu class="dropdown-menu" role="menu">
+                      <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Nested</a></li>
+                      <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Nested1</a></li>
+                      <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Nested2</a></li>
+                    </ul>
+                </li>
+ 
+                <!-- Nested dropdown2 -->
+                <li role="menuitem" dropdown triggers="mouseover" placement="right" container="body">
+                    <a dropdownToggle mdbWavesEffect class="dropdown-item dropdown-toggle"
+                        (click)="false">Hover me for nested dropdown <span class="caret"></span></a>
+                    <ul *dropdownMenu class="dropdown-menu" role="menu">
+                      <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">NestedA</a></li>
+                      <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">NestedA1</a></li>
+                      <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">NestedA2</a></li>
+                    </ul>
+                </li>
+ 
+                <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Something else here</a></li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">Separated link</a></li>
+
+            </ul>
+          </li>
+          <!-- End Dropdown Menu Group-->         
           
         
           <!-- </ul> below ends links on Navbar -->
@@ -59,10 +81,10 @@
     
         <!-- Links -->
 
-<!-- Search form 
+<!-- Search form -->
        
         <app-search-form></app-search-form>
-   -->    
+       
 <!-- Former Search form  
         <form class="form-inline waves-light" mdbWavesEffect>
             <div class="md-form mt-0">
