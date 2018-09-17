@@ -32,12 +32,29 @@
                 <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
             </li>
 
+            <!-- Basic Dropdwon inside Navbar -->
+<div class="btn-group" dropdown>
+  <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+          aria-controls="dropdown-basic">
+    Inside Dropdown <span class="caret"></span>
+  </button>
+  <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+      role="menu" aria-labelledby="button-basic">
+    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+    <li class="divider dropdown-divider"></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+    </li>
+  </ul>
+</div>
+<!-- Basic Dropdwon outside Navbar -->
 
              <!-- Dropdown Menu Group-->
            <div class="btn-group" dropdown [autoClose]="false" container="body">
   <button id="button-nested" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
           aria-controls="dropdown-nested">
-    This dropdown has nested submenu <span class="caret"></span>
+    Inside nested submenu <span class="caret"></span>
   </button>
   <ul id="dropdown-nested" *dropdownMenu class="dropdown-menu"
       role="menu" aria-labelledby="button-nested">
