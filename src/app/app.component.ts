@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+/* from site https://valor-software.com/ngx-bootstrap/#/getting-started */
+import { setTheme } from 'ngx-bootstrap/utils';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +10,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Town of Babylon';
+  /* from site https://valor-software.com/ngx-bootstrap/#/getting-started */
+  constructor() {
+    setTheme('bs4'); // or 'bs3'
 }
 
 
